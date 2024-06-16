@@ -13,20 +13,10 @@ enum FAQExample {
 const FAQ = () => {
   const [currentFAQ, setCurrentFAQ] = useState<FAQExample>(FAQExample.FAQ1);
 
-  const handleFAQChange = (faq: FAQExample) => {
-    setCurrentFAQ(faq);
-  };
+  const handleFAQChange = (faq: FAQExample) => setCurrentFAQ(faq);
 
-  const renderFAQ = () => {
-    switch (currentFAQ) {
-      case FAQExample.FAQ1:
-        return <FAQ1 />;
-      case FAQExample.FAQ2:
-        return <FAQ2 />;
-      default:
-        return null;
-    }
-  };
+  const renderFAQ = () =>
+    currentFAQ === FAQExample.FAQ1 ? <FAQ1 /> : <FAQ2 />;
 
   return (
     <motion.div
@@ -40,35 +30,27 @@ const FAQ = () => {
           <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
             Frequently Asked Questions
           </h2>
-          <p className="text-muted-foreground dark:text-muted-foreground md:text-xl/relaxed">
+          <p className="text-muted-foreground md:text-xl/relaxed">
             Get answers to the most common questions about our product.
           </p>
         </div>
         <div className="mb-8 mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
-          <Button
-            className={`flex w-48 gap-x-2 border bg-transparent text-foreground transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 dark:text-foreground sm:w-auto ${
-              currentFAQ === FAQExample.FAQ1
-                ? "bg-accent text-accent-foreground"
-                : ""
-            }`}
-            size="lg"
-            onClick={() => handleFAQChange(FAQExample.FAQ1)}
-          >
-            Style 1
-          </Button>
-          <Button
-            className={`flex w-48 gap-x-2 border bg-transparent text-foreground transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 dark:text-foreground sm:w-auto ${
-              currentFAQ === FAQExample.FAQ2
-                ? "bg-accent text-accent-foreground"
-                : ""
-            }`}
-            size="lg"
-            onClick={() => handleFAQChange(FAQExample.FAQ2)}
-          >
-            Style 2
-          </Button>
+          {Object.values(FAQExample)
+            .filter((value) => typeof value === "number")
+            .map((faq, index) => (
+              <Button
+                key={index}
+                className={`flex w-48 gap-x-2 border bg-transparent text-foreground transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none ${
+                  currentFAQ === faq ? "bg-accent text-accent-foreground" : ""
+                }`}
+                size="lg"
+                onClick={() => handleFAQChange(faq as FAQExample)}
+              >
+                Style {index + 1}
+              </Button>
+            ))}
         </div>
-        <div className="">{renderFAQ()}</div>
+        <div>{renderFAQ()}</div>
       </div>
     </motion.div>
   );

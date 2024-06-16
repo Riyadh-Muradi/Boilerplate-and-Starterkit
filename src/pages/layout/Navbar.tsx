@@ -27,10 +27,10 @@ const Navbar = () => {
       transition={{ duration: 0.4, delay: 0.1 }}
       viewport={{ once: true }}
     >
-      <header className="">
+      <header>
         {/* Desktop */}
         <NavigationMenu className="flex flex-wrap items-center justify-between">
-          <Link href={"/"} className="flex items-center gap-2 lg:w-[198.13px]">
+          <Link href="/" className="flex items-center gap-2 lg:w-[198.13px]">
             <div className="flex items-center text-xl font-semibold">
               <LayoutTemplate className="h-6 w-10" />
               <p className="ml-2 hidden text-lg font-medium lg:flex">
@@ -56,9 +56,8 @@ const Navbar = () => {
               <Button variant="ghost">
                 <p className="text-sm">Sign In</p>
               </Button>
-
               <Button variant="outline">
-                <p className="flex w-12 bg-transparent text-foreground transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 dark:text-foreground sm:w-auto">
+                <p className="flex w-12 bg-transparent text-foreground transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                   Get Started
                 </p>
               </Button>
@@ -83,7 +82,7 @@ const Navbar = () => {
                 <Menu className="h-6 w-10 cursor-pointer text-4xl" />
               </div>
 
-              <Link href={"/"} className="flex items-center gap-2">
+              <Link href="/" className="flex items-center gap-2">
                 <div className="flex items-center text-xl font-semibold">
                   <LayoutTemplate className="h-6 w-6" />
                 </div>
