@@ -2,7 +2,7 @@
 
 Boilerplate and Starter for Next.js with App Router support, Tailwind CSS and TypeScript.
 
-Clone this project and use it to create your own. You can check the live demo at [Boilerplate-and-Starterkit](https://github.com/Riyadh-Muradi/Boilerplate-and-Starterkit).
+Clone this project and use it to create your own. You can check the live demo at [Boilerplate-and-Starterkit](https://boilerplate-and-starterkit.vercel.app/).
 
 ### Project structure
 
