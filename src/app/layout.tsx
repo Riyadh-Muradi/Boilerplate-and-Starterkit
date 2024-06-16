@@ -24,7 +24,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           defaultTheme="system"
           disableTransitionOnChange
         >
-          <Alert />
+          {/* <Alert /> */}
           <Navbar />
           {children}
           <Footer />

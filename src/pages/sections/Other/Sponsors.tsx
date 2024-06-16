@@ -10,7 +10,7 @@ const Sponsors = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4, delay: 0.6 }}
         viewport={{ once: true }}
-        className="mx-auto max-w-7xl flex-wrap justify-center px-4 py-8 lg:py-12"
+        className="flex flex-col items-center gap-y-4 p-8"
       >
         <CompanyLogos />
       </motion.div>
