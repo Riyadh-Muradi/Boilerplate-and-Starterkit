@@ -31,7 +31,7 @@ const Footer = () => {
               <div className="bg-background dark:bg-background">
                 <div className="mx-auto mt-4 flex max-w-6xl items-center justify-center md:items-start md:justify-start">
                   <div className="flex space-x-4">
-                    <Link href={"https://github.com/Riyadh-Muradi/boilerplate"}>
+                    <Link href={"https://github.com/Riyadh-Muradi/Boilerplate-and-Starterkit"}>
                       <Button variant="ghost" size="icon">
                         <Github className="h-6 w-6 text-foreground dark:text-foreground" />
                       </Button>

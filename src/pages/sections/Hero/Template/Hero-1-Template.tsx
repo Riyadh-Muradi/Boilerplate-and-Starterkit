@@ -51,7 +51,7 @@ const Hero1Template = () => {
           className="mt-5 flex flex-col items-center gap-x-4 gap-y-4 sm:flex-row"
         >
           <Link
-            href={"https://github.com/Riyadh-Muradi/boilerplate"}
+            href={"https://github.com/Riyadh-Muradi/Boilerplate-and-Starterkit"}
             target="_blank"
           >
             <Button
@@ -63,7 +63,7 @@ const Hero1Template = () => {
             </Button>
           </Link>
           <Link
-            href={"https://github.com/Riyadh-Muradi/boilerplate"}
+            href={"https://github.com/Riyadh-Muradi/Boilerplate-and-Starterkit"}
             target="_blank"
           >
             <Button

@@ -15,7 +15,7 @@ export function Alert() {
       <div className="mx-auto flex max-w-[400px] items-center justify-center gap-2 pt-4 text-base font-medium text-foreground dark:text-foreground">
         <p>This is a demo</p>
         <Link
-          href={"https://github.com/Riyadh-Muradi/boilerplate"}
+          href={"https://github.com/Riyadh-Muradi/Boilerplate-and-Starterkit"}
           target="_blank"
         >
           <Button

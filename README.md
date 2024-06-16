@@ -2,7 +2,7 @@
 
 Boilerplate and Starter for Next.js with App Router support, Tailwind CSS and TypeScript.
 
-Clone this project and use it to create your own SaaS. You can check the live demo at [SaaS Boilerplate](https://boilerplate-five-gules.vercel.app/).
+Clone this project and use it to create your own. You can check the live demo at (https://boilerplate-and-starterkit.vercel.app/).
 
 ### Project structure
 
