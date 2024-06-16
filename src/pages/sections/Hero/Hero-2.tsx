@@ -29,7 +29,7 @@ const Hero2 = ({
   });
 
   return (
-    <section className="flex-col items-center gap-y-4 p-8 pt-24">
+    <section className="flex-col flex items-center gap-y-4 p-8 pt-24">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline">
