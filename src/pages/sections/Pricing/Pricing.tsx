@@ -40,11 +40,8 @@ const Pricing = () => {
       transition={{ duration: 0.4, delay: 0.4 }}
       viewport={{ once: true }}
     >
-      <div
-        id="pricing"
-        className="mx-auto min-h-[600px] max-w-7xl gap-8 px-4 py-24 pb-8 lg:pb-16 lg:pt-32"
-      >
-        <div className="mx-auto max-w-3xl space-y-2 text-center">
+      <div id="pricing" className="flex-col items-center gap-y-4 p-8">
+        <div className="justify-center space-y-2 text-center">
           <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
             Pricing
           </h2>

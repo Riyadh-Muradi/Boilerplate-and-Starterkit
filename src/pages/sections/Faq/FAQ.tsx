@@ -9,6 +9,7 @@ enum FAQExample {
   FAQ1,
   FAQ2,
 }
+
 const FAQ = () => {
   const [currentFAQ, setCurrentFAQ] = useState<FAQExample>(FAQExample.FAQ1);
 
@@ -34,11 +35,8 @@ const FAQ = () => {
       transition={{ duration: 0.4, delay: 0.4 }}
       viewport={{ once: true }}
     >
-      <div
-        id="faq"
-        className="mx-auto max-w-7xl gap-8 px-4 py-24 pb-8 lg:pb-16 lg:pt-32"
-      >
-        <div className="mx-auto max-w-3xl space-y-2 text-center">
+      <div id="faq" className="flex-col items-center gap-y-4 p-8">
+        <div className="justify-center space-y-2 text-center">
           <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
             Frequently Asked Questions
           </h2>
@@ -48,7 +46,7 @@ const FAQ = () => {
         </div>
         <div className="mb-8 mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
           <Button
-            className={`bg-transparenttext-foreground flex w-48 gap-x-2 border transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 dark:text-foreground sm:w-auto ${
+            className={`flex w-48 gap-x-2 border bg-transparent text-foreground transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 dark:text-foreground sm:w-auto ${
               currentFAQ === FAQExample.FAQ1
                 ? "bg-accent text-accent-foreground"
                 : ""

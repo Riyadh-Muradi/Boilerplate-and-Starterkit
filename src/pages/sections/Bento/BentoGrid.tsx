@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Bento1 from "./Bento";
+import Bento1 from "./Bento-1";
 
 const BentoGrid = () => {
   return (
@@ -14,9 +14,9 @@ const BentoGrid = () => {
     >
       <div
         id="features"
-        className="flex min-h-[600px] flex-col items-center gap-y-4 p-8"
+        className="min-h-[600px] flex-col items-center gap-y-4 p-8"
       >
-        <div className="max-w-3xl space-y-2 text-center">
+        <div className="space-y-2 text-center">
           <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
             Features
           </h2>

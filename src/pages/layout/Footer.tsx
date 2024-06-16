@@ -13,9 +13,9 @@ const Footer = () => {
       transition={{ duration: 0.4, delay: 0.1 }}
       viewport={{ once: true }}
     >
-      <div className="mx-auto max-w-7xl flex-wrap justify-center px-4 py-8 lg:py-12">
-        <footer className="mx-auto rounded-lg border bg-background/95 shadow-md backdrop-blur supports-[backdrop-filter]:bg-background/60">
-          <div className="mx-auto items-center p-10 text-center md:flex md:max-w-[700px] md:items-start md:justify-between md:text-start lg:max-w-[900px] xl:max-w-[1200px]">
+      <div className="flex-col items-center gap-y-4 p-8">
+        <footer className="rounded-lg border bg-background/95 shadow-md backdrop-blur supports-[backdrop-filter]:bg-background/60">
+          <div className="items-center p-10 text-center md:flex md:items-start md:justify-between md:text-start">
             <div className="mb-6 md:mb-0">
               <Link href={"/"}>
                 <div className="mb-4 flex items-center justify-center md:items-start md:justify-start">
@@ -29,9 +29,13 @@ const Footer = () => {
                 React, Next.js, TypeScript
               </p>
               <div className="bg-background dark:bg-background">
-                <div className="mx-auto mt-4 flex max-w-6xl items-center justify-center md:items-start md:justify-start">
+                <div className="mt-4 flex max-w-6xl items-center justify-center md:items-start md:justify-start">
                   <div className="flex space-x-4">
-                    <Link href={"https://github.com/Riyadh-Muradi/Boilerplate-and-Starterkit"}>
+                    <Link
+                      href={
+                        "https://github.com/Riyadh-Muradi/Boilerplate-and-Starterkit"
+                      }
+                    >
                       <Button variant="ghost" size="icon">
                         <Github className="h-6 w-6 text-foreground dark:text-foreground" />
                       </Button>
@@ -88,8 +92,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="mx-auto flex border-t">
-            <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+          <div className="flex justify-center border-t">
+            <div className="flex px-4 py-4">
               <p className="text-md text-center text-muted-foreground dark:text-muted-foreground">
                 &copy; 2024 Template. All Rights Reserved.{" "}
                 <span className="ml-1">Created and designed by</span>

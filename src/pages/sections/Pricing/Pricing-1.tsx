@@ -13,13 +13,13 @@ import React from "react";
 
 const Pricing1 = () => {
   return (
-    <div className="grid min-h-[600px] max-w-7xl grid-cols-1 gap-8 md:grid-cols-1 xl:grid-cols-3">
+    <div className="grid min-h-[600px] grid-cols-1 gap-8 md:grid-cols-1 xl:grid-cols-3">
       {PricingDetails.map((pricing, index) => (
         <div
           className="flex flex-col gap-6 rounded-lg bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
           key={index}
         >
-          <Card className="flex min-h-[600px] min-w-72 max-w-7xl flex-1 flex-col justify-between gap-8 rounded-lg border bg-background/95 p-4 shadow-md backdrop-blur supports-[backdrop-filter]:bg-background/5 md:min-w-96">
+          <Card className="flex min-h-[600px] min-w-72 flex-1 flex-col justify-between gap-8 rounded-lg border bg-background/95 p-4 shadow-md backdrop-blur supports-[backdrop-filter]:bg-background/5 md:min-w-96">
             <div>
               <CardHeader>
                 <CardTitle className="pt-4 text-center text-2xl font-bold text-foreground">
