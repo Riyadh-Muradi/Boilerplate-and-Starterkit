@@ -1,7 +1,6 @@
 # Boilerplate and Starter kit made using Shadcn UI, Tailwind CSS, React, Next.js and TypeScript.
 
 Boilerplate and Starter for Next.js with App Router support, Tailwind CSS and TypeScript.
-(its not perfect ofc)
 
 Clone this project and use it to create your own. You can check the live demo at [Boilerplate-and-Starterkit](https://boilerplate-and-starterkit.vercel.app/).
 
